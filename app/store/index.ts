@@ -63,4 +63,4 @@ export const useTaskStore = create<TaskState>((set) => ({
 
         return { tasks: updatedTasks };
     }),
-}));
+})); 

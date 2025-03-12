@@ -1,11 +1,18 @@
 // Re-export types from store for convenience
-export * from '../store';
+import { Task, TaskStatus } from './store';
 
-// Additional types can be defined here
+export type { Task, TaskStatus };
+
+// Additional types
 export type TabType = 'todo' | 'in-progress' | 'done' | 'all';
 
 export interface FormData {
     title: string;
     description: string;
     status: 'todo' | 'in-progress' | 'done';
+}
+
+declare module '*.svg' {
+    const content: string;
+    export default content;
 } 
