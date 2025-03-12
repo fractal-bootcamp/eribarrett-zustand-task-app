@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useTaskStore, Task } from '../store';
+import React, { useState } from 'react';
+import { useTaskStore, type Task } from '../store';
 
 interface TaskItemProps {
     task: Task;
